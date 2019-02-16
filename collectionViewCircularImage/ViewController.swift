@@ -7,7 +7,7 @@
 //
 
 import UIKit
-    var i : Int = 0
+   
 class ViewController: UIViewController, UICollectionViewDelegate,UICollectionViewDataSource {
     
     let labels = ["1","2","3","4","5","6","7","8","9","10"]
@@ -40,16 +40,6 @@ class ViewController: UIViewController, UICollectionViewDelegate,UICollectionVie
         
          cell.cvlabel.text=labels[indexPath.item]
         cell.cvImg.image=imgs[indexPath.item]
-        
-        print(indexPath)
-        i=indexPath.max()!
-  
-        
-        if(indexPath.item>8){
-           
-            return cell
-        }
-        
         
         return cell
         
